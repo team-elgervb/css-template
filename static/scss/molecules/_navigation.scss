@@ -1,0 +1,77 @@
+.main-navigation {
+  background: $primary-color;
+  box-shadow: 0 0 3px 2px $shadow-color;
+  color: $contrast-text-color;
+  transition: all .2s ease;
+  width: 100%;
+  z-index: 100;
+
+  .title{
+    float: left;
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0 45px 0 0;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 1px $shadow-color;
+    white-space: nowrap;
+
+    a:hover{
+      background-color: inherit;
+    }
+  }
+  nav{
+    display: block;
+    font-size: 1.2em;
+    padding: 10px 25px;
+    transition: background-color .5s ease 0s;
+    width: 100%;
+
+    a{
+      color: #fff;
+      display: block;
+      float: left;
+      font-size: 1.2em;
+      padding: 20px 25px;
+      transition: all .2s ease 0s;
+
+      &.active{
+        background-color: $primary-color-hover;
+        color: $primary-color;
+        text-decoration: none;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      &:hover{
+        background-color: $primary-color-hover;
+        color: $contrast-text-color;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  
+  /* right menu items */
+  .right{
+    float: right;
+
+    &:last-child{
+      padding-right: 25px;
+    }
+  }
+
+  /* Fixed floating nav bar */
+  &.fixed{
+    position: fixed;
+    top: 0;
+  }
+  /* next element gets a padding-top, so it does not fall behind the nav bar  */
+  &.fixed + *{
+    padding-top: 120px;
+  }
+
+  /* a smaller representation of the main nagigation */
+  &.small nav a{
+    font-size: .8em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}

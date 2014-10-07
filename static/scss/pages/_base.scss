@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Open Sans";
+    src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensans/OpenSans-Light.woff") format("woff");
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body, textarea, select{
+  color: $text-color;
+  font: 1em "Open Sans",Helvetica,Arial,sans-serif;
+}
