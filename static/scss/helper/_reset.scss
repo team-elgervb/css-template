@@ -14,7 +14,7 @@
     table, caption, tbody, tfoot, thead, tr, th, td,
     article, aside, canvas, details, figcaption, figure,
     footer, header, hgroup, menu, nav, section, summary,
-    time, mark, audio, video {
+    time, mark, audio, video, output {
     margin:0;
     padding:0; 
     border:0;
@@ -63,6 +63,10 @@
     color:#000;
     font-style:italic;
     font-weight:bold;
+    }
+    output{
+        color: #000;
+        display: inline;
     }
     del {
     text-decoration: line-through;
