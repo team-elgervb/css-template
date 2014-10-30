@@ -57,7 +57,11 @@
   }
 }
 
-
+.btn[disabled], .btn.disabled, [class*='btn-'][disabled], .disabled[class*='btn-']{
+  cursor: default;
+  opacity: .5;
+  pointer-events: none;
+}
 
 input[class*='btn-'], button[class*='btn-'] {
   cursor: pointer;
