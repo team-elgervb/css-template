@@ -15,18 +15,14 @@
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 14px;
   font-weight: 300;
-  margin: 0;
+  margin: 2px 0;
   padding: 8px 25.6px;
   text-decoration: none;
   text-align: center;
   text-shadow: 0 1px 1px white;
   transition: background .3s ease-out;
   vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
-     -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.15);
     -webkit-user-select: none;
      -khtml-user-select: none;
        -moz-user-select: none;
@@ -77,7 +73,6 @@ input[class*='btn-'], button[class*='btn-'] {
     background: #DDDDDD;
   }
 }
-
 
 .btn-flat-red{
   color: #fff;
@@ -135,18 +130,10 @@ input[class*='btn-'], button[class*='btn-'] {
   }
 }
 .btn-rounded {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
 }
 
 .btn-pill {
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   border-radius: 50px;
 }
 
@@ -196,13 +183,7 @@ input[class*='btn-'], button[class*='btn-'] {
   }
 }
 .btn-circle {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   border-radius: 50%;
-  -webkit-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.5), 0px 1px 2px rgba(0, 0, 0, 0.2);
   width: 120px;
   height: 120px;
@@ -300,10 +281,8 @@ a.btn-circle{
   background-image:-o-linear-gradient(top, #fd7c7e,#d60000);
   background-image:linear-gradient(top, #fd7c7e,#d60000);
   border:2px solid white;
-  -webkit-border-radius:15px;
-          border-radius:15px;
-  -webkit-box-shadow:0 2px 2px rgba(0,0,0,0.4);
-          box-shadow:0 2px 2px rgba(0,0,0,0.4);
+  border-radius:15px;
+  box-shadow:0 2px 2px rgba(0,0,0,0.4);
   color:white;
   display:block;
   font-size:.8em;
